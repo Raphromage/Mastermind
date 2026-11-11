@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morpion à deux</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f1f5f9; color: #17243b; font-family: system-ui, sans-serif; }
+    main { width: min(92vw, 430px); padding: 32px; text-align: center; background: white; border-radius: 24px; box-shadow: 0 16px 50px #17243b12; }
+    h1 { margin: 0 0 8px; font-size: 2.4rem; }
+    .intro { margin: 0; color: #64748b; }
+    #statut { margin: 26px 0 18px; font-weight: 600; min-height: 1.5em; }
+    .grille { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); gap: 9px; }
+    .case { aspect-ratio: 1; min-width: 0; border: 0; border-radius: 12px; background: #eef2f7; color: #2563eb; font: 700 clamp(2rem, 12vw, 3.5rem) system-ui, sans-serif; cursor: pointer; }
+    .case:hover:enabled { background: #e0e8f4; }
+    .case:disabled { cursor: default; opacity: 1; }
+    .case[data-symbole="O"] { color: #b45309; }
+    .case.gagnante { background: #d1fae5; color: #065f46; }
+    button:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+    #recommencer { margin-top: 24px; border: 0; border-radius: 10px; padding: 13px 22px; background: #17243b; color: white; font: 600 1rem system-ui, sans-serif; cursor: pointer; }
+    #recommencer:hover { background: #2e4261; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Morpion</h1>
+    <p class="intro">Deux joueurs, trois symboles alignés pour gagner.</p>
+    <p id="statut" role="status" aria-live="polite">Au tour de X</p>
+    <div class="grille" role="group" aria-label="Grille de morpion, 3 lignes et 3 colonnes">
+      <button class="case" aria-label="Ligne 1, colonne 1 : vide"></button>
+      <button class="case" aria-label="Ligne 1, colonne 2 : vide"></button>
+      <button class="case" aria-label="Ligne 1, colonne 3 : vide"></button>
+      <button class="case" aria-label="Ligne 2, colonne 1 : vide"></button>
+      <button class="case" aria-label="Ligne 2, colonne 2 : vide"></button>
+      <button class="case" aria-label="Ligne 2, colonne 3 : vide"></button>
+      <button class="case" aria-label="Ligne 3, colonne 1 : vide"></button>
+      <button class="case" aria-label="Ligne 3, colonne 2 : vide"></button>
+      <button class="case" aria-label="Ligne 3, colonne 3 : vide"></button>
+    </div>
+    <button id="recommencer">Nouvelle partie</button>
+  </main>
+  <script>
+    const cases = [...document.querySelectorAll('.case')];
+    const statut = document.querySelector('#statut');
+    const boutonRecommencer = document.querySelector('#recommencer');
+    const alignements = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
+    let plateau = Array(9).fill('');
+    let joueur = 'X';
+    let terminee = false;
+
+    function etiqueter(index, contenu) {
+      return `Ligne ${Math.floor(index / 3) + 1}, colonne ${index % 3 + 1} : ${contenu || 'vide'}`;
+    }
+
+    cases.forEach((caseJeu, index) => {
+      caseJeu.addEventListener('click', () => {
+        if (terminee || plateau[index]) return;
+        plateau[index] = joueur;
+        boutonRecommencer.textContent = plateau.every(Boolean) ? 'Nouvelle partie' : 'Recommencer';
+        caseJeu.textContent = joueur;
+        caseJeu.dataset.symbole = joueur;
+        caseJeu.setAttribute('aria-label', etiqueter(index, joueur));
+        caseJeu.disabled = true;
+        const victoire = alignements.find(ligne => ligne.every(i => plateau[i] === joueur));
+        if (victoire) {
+          statut.textContent = `${joueur} a gagné !`;
+          victoire.forEach(i => cases[i].classList.add('gagnante'));
+          terminee = true;
+        } else if (plateau.every(Boolean)) {
+          statut.textContent = 'Match nul !';
+          terminee = true;
+        } else {
+          joueur = joueur === 'X' ? 'O' : 'X';
+          statut.textContent = `Au tour de ${joueur}`;
+        }
+        if (terminee) cases.forEach(cellule => cellule.disabled = true);
+      });
+    });
+
+    boutonRecommencer.addEventListener('click', () => {
+      plateau = Array(9).fill('');
+      joueur = 'X';
+      terminee = false;
+      statut.textContent = 'Au tour de X';
+      boutonRecommencer.textContent = 'Nouvelle partie';
+      cases.forEach((caseJeu, index) => {
+        caseJeu.textContent = '';
+        caseJeu.disabled = false;
+        caseJeu.classList.remove('gagnante');
+        delete caseJeu.dataset.symbole;
+        caseJeu.setAttribute('aria-label', etiqueter(index, ''));
+      });
+    });
+  </script>
+</body>
+</html>

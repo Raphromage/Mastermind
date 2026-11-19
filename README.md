@@ -1,4 +1,4 @@
-# Morpion
+# Mastermind
 
 ## Annexe — Règles communes
 

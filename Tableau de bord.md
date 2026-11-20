@@ -198,3 +198,13 @@ Ce document est un suivi manuel : il ne se met pas à jour automatiquement.
 - **Changements :** ajout de `rendu/.gitkeep` à la racine pour conserver ce dossier dans Git, qui ne suit pas les dossiers vides ; ajout de cette entrée au tableau de bord.
 - **Contrôle :** vérification de la présence du dossier et de son fichier de maintien sur la branche main lors de la restitution.
 - **Commit :** voir [l’historique du dossier rendu](https://github.com/Raphromage/Mastermind/commits/main/rendu).
+
+## 20 novembre 2026 — Version de la racine Jalon 1
+
+- **Date de la demande :** 20/11/2026 ; heure exacte non disponible.
+- **Nature :** renommage du fichier du jeu et étiquetage d’une version.
+- **Demande :** créer un tag pour la version du jeu à la racine et renommer le fichier du jeu en jalon-1.
+- **Fichiers :** le contenu du jeu de `index.html` est conservé à l’identique dans `jalon-1.html` ; `index.html` devient une redirection pour conserver l’adresse habituelle. README.md et AGENTS.md sont adaptés ; cette entrée complète le tableau de bord.
+- **Périmètre :** aucune modification du dossier rendu.
+- **Contrôle :** comparaison du blob du jeu avant/après renommage et vérification de l’accès GitHub Pages après déploiement. La création du tag distant est vérifiée séparément.
+- **Tag demandé :** jalon-1 pour le commit de cette version à la racine ; un tag local seul ne prouve pas sa publication sur GitHub.

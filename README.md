@@ -1,5 +1,14 @@
 # Mastermind
 
+## Version Jalon 1 à la racine
+
+- Le fichier du jeu est `jalon-1.html` : [jouer au Mastermind](https://raphromage.github.io/Mastermind/jalon-1.html).
+- `index.html` conserve l’accès par l’adresse habituelle en redirigeant vers le jeu renommé.
+- Pour jouer hors connexion, ouvrir `jalon-1.html` directement.
+- Dans les consignes, `jalon-1` est le nom d’un tag Git qui doit repérer un commit précis. Le renommage du fichier demandé ici est une opération distincte.
+- [Tags du dépôt](https://github.com/Raphromage/Mastermind/tags) : vérifier que le tag `jalon-1` pointe sur la version de la racine à remettre. Le résultat de la création est indiqué dans la restitution de cette demande.
+- Le dossier `rendu/` conserve sa copie indépendante et n’est pas modifié par ce renommage.
+
 ## Annexe — Règles communes
 
 Cette variante pédagogique s’inspire du [Mastermind](https://instructions.hasbro.com/fr-fr/instruction/mastermind-board-game-for-families-and-kids-the-classic-code-cracking-game-family-gifts-family-games). Pour le projet, les règles ci-dessous font foi ; elles ne reprennent pas toutes les variantes commerciales.

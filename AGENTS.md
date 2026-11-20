@@ -6,7 +6,7 @@
 - Prendre comme référence les règles communes du README, version `code-couleurs-1.0`. Les variantes commerciales du Mastermind ne remplacent pas ces règles.
 - Identifier les sources de référence avant de modifier le contenu.
 - Distinguer les faits établis, les hypothèses et les décisions.
-- Le jeu est contenu dans `index.html`, à la racine du dépôt. Préserver son fonctionnement autonome en HTML, CSS et JavaScript, sans dépendance obligatoire ni connexion nécessaire pour jouer.
+- Le jeu est contenu dans `jalon-1.html`, à la racine du dépôt. `index.html` est une page de redirection vers ce jeu pour préserver l’adresse GitHub Pages. Préserver son fonctionnement autonome en HTML, CSS et JavaScript, sans dépendance obligatoire ni connexion nécessaire pour jouer.
 - Le dépôt GitHub est `Raphromage/Mastermind` ; le site GitHub Pages est https://raphromage.github.io/Mastermind/.
 - Consulter `Tests réalisés.md` pour connaître les tests déjà réalisés. Le script local `check-rules.cjs`, s’il est disponible, vérifie le moteur.
 

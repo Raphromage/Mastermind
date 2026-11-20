@@ -25,3 +25,22 @@ Secret : rouge – rouge – bleu – vert.
 Proposition : rouge – rouge – rouge – rouge.
 
 Résultat : 2 couleurs bien placées et 0 mal placée. Les deux rouges supplémentaires ne comptent pas.
+
+## Test automatisé — Secret rouge–rouge–bleu–vert
+
+Test réalisé le **20 novembre 2026** sur le moteur du jeu, avec un générateur déterministe imposant le secret **rouge–rouge–bleu–vert**. Le fichier testé était identique à la version GitHub d’`index.html` (blob `01484bc4b264f3790bfe4a8f3adfaac98798cb4a`).
+
+Chaque ligne de proposition ci-dessous correspond à une partie indépendante utilisant ce même secret.
+
+| Proposition ou comportement vérifié | Résultat attendu | Résultat observé | Statut |
+| --- | --- | --- | --- |
+| rouge–rouge–rouge–rouge | 2 bien placées, 0 mal placée | 2 bien placées, 0 mal placée | Réussi |
+| bleu–vert–rouge–rouge | 0 bien placée, 4 mal placées | 0 bien placée, 4 mal placées | Réussi |
+| rouge–bleu–rouge–vert | 2 bien placées, 2 mal placées | 2 bien placées, 2 mal placées | Réussi |
+| rouge–rouge–bleu–bleu | 3 bien placées, 0 mal placée | 3 bien placées, 0 mal placée | Réussi |
+| jaune–orange–violet–jaune | 0 bien placée, 0 mal placée | 0 bien placée, 0 mal placée | Réussi |
+| rouge–rouge–bleu–vert | 4 bien placées et victoire | 4 bien placées et victoire | Réussi |
+| Neuf erreurs puis le code exact au dixième essai | Victoire au dixième essai | Victoire ; historique de dix essais | Réussi |
+| Nouvelle proposition après cette victoire | Refus sans ajout à l’historique | Refus ; historique toujours de dix essais | Réussi |
+
+**Portée :** tests automatisés du moteur, exécutés avec `node test-secret.cjs` en local. Il ne s’agit pas d’une partie jouée dans le navigateur. Le code secret du site GitHub Pages n’a pas été modifié.

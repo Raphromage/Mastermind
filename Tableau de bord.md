@@ -158,3 +158,13 @@ Les heures exactes de ces changements de réglages n’ont pas été relevées. 
 Ajouter une entrée pour chaque changement GitHub effectué : date de la demande (ou « non connue »), nature, demande, fichiers et changements, date du commit, lien vers le commit et résultat des contrôles. Consigner séparément les réglages sans commit. Conserver l’historique et distinguer une demande, son exécution et une éventuelle publication.
 
 Ce document est un suivi manuel : il ne se met pas à jour automatiquement.
+
+## 20 novembre 2026 — Résultats du test à secret imposé dans le README
+
+- **Date de la demande :** 20/11/2026 ; heure exacte non disponible.
+- **Nature :** documentation des tests.
+- **Demande :** « affiche ce test dans le fichier read me ».
+- **README.md :** ajout des résultats déjà obtenus avec le secret rouge–rouge–bleu–vert : six propositions, victoire au dixième essai et blocage après victoire. Type automatisé, version testée et limites précisés.
+- **Tableau de bord.md :** ajout de cette entrée de suivi.
+- **Contrôle :** relecture des résultats conservés dans la conversation ; vérification du contenu enregistré sur GitHub lors de la restitution. Aucun nouveau test du jeu nécessaire pour cet ajout documentaire.
+- **Commit :** voir [l’historique du README](https://github.com/Raphromage/Mastermind/commits/main/README.md).

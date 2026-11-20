@@ -189,3 +189,12 @@ Ce document est un suivi manuel : il ne se met pas à jour automatiquement.
 - **Consigne conservée :** chaque futur test demandé doit être consigné dans `Tests réalisés.md`.
 - **Contrôle :** vérification du nouveau chemin, de la disparition de l’ancien chemin et de la conservation du contenu lors de la restitution.
 - **Commit :** voir [l’historique du journal](https://github.com/Raphromage/Mastermind/commits/main/Tests%20r%C3%A9alis%C3%A9s.md).
+
+## 20 novembre 2026 — Création du dossier rendu
+
+- **Date de la demande :** 20/11/2026 ; heure exacte non disponible.
+- **Nature :** organisation du dépôt.
+- **Demande :** créer un dossier « rendu » sur GitHub.
+- **Changements :** ajout de `rendu/.gitkeep` à la racine pour conserver ce dossier dans Git, qui ne suit pas les dossiers vides ; ajout de cette entrée au tableau de bord.
+- **Contrôle :** vérification de la présence du dossier et de son fichier de maintien sur la branche main lors de la restitution.
+- **Commit :** voir [l’historique du dossier rendu](https://github.com/Raphromage/Mastermind/commits/main/rendu).

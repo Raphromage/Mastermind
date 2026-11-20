@@ -198,3 +198,15 @@ Ce document est un suivi manuel : il ne se met pas à jour automatiquement.
 - **Changements :** ajout de `rendu/.gitkeep` à la racine pour conserver ce dossier dans Git, qui ne suit pas les dossiers vides ; ajout de cette entrée au tableau de bord.
 - **Contrôle :** vérification de la présence du dossier et de son fichier de maintien sur la branche main lors de la restitution.
 - **Commit :** voir [l’historique du dossier rendu](https://github.com/Raphromage/Mastermind/commits/main/rendu).
+
+## 20 novembre 2026 — Préparation isolée du rendu J1
+
+- **Demande :** appliquer dans rendu les consignes du PowerPoint à partir de copies des fichiers de la racine, sans modifier les originaux.
+- **Sources copiées :** les cinq fichiers de la racine au commit `ce7b92133490f9d51637c2b7a1fc32f739553eaa`.
+- **Premier commit :** [e20b5e2](https://github.com/Raphromage/Mastermind/commit/e20b5e2955087a11505acc437ed69c9bd38eae7b) : copies du code et de la documentation, cadrage et choix avec Codex, attendus des scénarios avant exécution, script tests-j1.cjs. Aucun fichier de la racine modifié.
+- **Vérifications exécutées :** six tests automatisés réussis, sortie conservée dans preuves-tests-j1.txt ; déploiement Pages réussi et accès HTTP 200 au jeu de rendu.
+- **Ajouts documentaires :** résultats et limites dans README.md et Tests réalisés.md, suivi-j1.md, jalon1_lopes.docx pour Cyberlearn.
+- **Document Word :** une page créée et contrôlée sur image après export PDF avec Word ; le moteur LibreOffice fourni était absent.
+- **Limites :** aucun test croisé de binôme ; un coup dans le navigateur de contrôle n’a pas pu être vérifié à cause de l’erreur Windows 1920. Documents d’évaluation liés au support non accessibles par l’outil de lecture.
+- **Tag prévu :** jalon-1 sur la version de remise, à vérifier séparément après le commit des documents.
+- **Fichiers originaux :** conservation de leurs identifiants Git, à contrôler lors de la restitution.

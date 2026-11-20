@@ -210,3 +210,11 @@ Ce document est un suivi manuel : il ne se met pas à jour automatiquement.
 - **Limites :** aucun test croisé de binôme ; un coup dans le navigateur de contrôle n’a pas pu être vérifié à cause de l’erreur Windows 1920. Documents d’évaluation liés au support non accessibles par l’outil de lecture.
 - **Tag prévu :** jalon-1 sur la version de remise, à vérifier séparément après le commit des documents.
 - **Fichiers originaux :** conservation de leurs identifiants Git, à contrôler lors de la restitution.
+
+
+### Complément de vérification
+
+- Les cinq identifiants Git des originaux à la racine correspondent toujours au relevé initial.
+- Le document Word a été rendu sur une page et inspecté après export PDF.
+- Envoi du tag distant : échec d’authentification Git (« unable to get password from user »). Aucun tag distant créé par cette tentative. Limite consignée dans le README, le suivi et le document Word.
+- Version préparée : b47649a1fcd4515872f23868336e3cf68e42d7e8 ; ces compléments ne changent pas le fichier du jeu.

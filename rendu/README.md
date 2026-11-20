@@ -125,3 +125,16 @@ Chaque ligne de proposition ci-dessous correspond à une partie indépendante ut
 Le document [jalon1_lopes.docx](jalon1_lopes.docx) contient les liens du dépôt, du jeu de rendu et le nom du tag `jalon-1`. Le détail des exigences, de leur état et des étapes humaines restantes figure dans [suivi-j1.md](suivi-j1.md).
 
 Les fichiers du jeu et du test associés au commit testé sont conservés sans changement dans la version de remise. Les ajouts suivants portent sur les résultats et les documents. Le tag de remise doit être contrôlé dans [les tags GitHub](https://github.com/Raphromage/Mastermind/tags) et pointer vers la version finale du dossier.
+
+## Tag jalon-1 — création encore nécessaire
+
+Le tag `jalon-1` a été préparé localement, mais **n’a pas pu être envoyé à GitHub** : Git ne dispose pas d’identifiants utilisables et le plugin ne propose pas de création de tag. Le tag distant était absent à la préparation.
+
+Commit de rendu préparé et contenant le jeu testé : `b47649a1fcd4515872f23868336e3cf68e42d7e8`. Les compléments ultérieurs ne modifient pas le jeu. Après connexion Git, ce commit peut être repéré avec :
+
+```bash
+git tag jalon-1 b47649a1fcd4515872f23868336e3cf68e42d7e8
+git push origin jalon-1
+```
+
+Si le tag existe déjà localement ou sur GitHub, vérifier sa cible avant toute action ; ne pas le déplacer automatiquement. Vérifier ensuite sa présence dans [les tags du dépôt](https://github.com/Raphromage/Mastermind/tags).

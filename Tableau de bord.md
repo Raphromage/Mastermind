@@ -228,3 +228,13 @@ Ce document est un suivi manuel : il ne se met pas à jour automatiquement.
 - **Changements :** suppression des 11 fichiers de rendu/ sur la branche main ; ajout de cette entrée au tableau de bord.
 - **Périmètre :** le jeu jalon-1.html et les autres fichiers de la racine sont conservés. Le tag jalon-1 conserve sa cible historique ; cette suppression ne réécrit pas les anciens commits.
 - **Contrôle :** vérification de l’absence de rendu/ dans le nouvel arbre Git lors de la restitution.
+
+## 20 novembre 2026 — Ajout du document de remise J1 actualisé
+
+- **Date de la demande :** 20/11/2026 ; heure exacte non disponible.
+- **Nature :** ajout d’un livrable Word.
+- **Demande :** inclure dans GitHub le document jalon1_lopes.docx mis à jour.
+- **Fichiers :** ajout de `jalon1_lopes.docx` à la racine ; ajout de cette entrée au tableau de bord.
+- **Contenu :** nom « Lopes Raphaël », liens actuels du dépôt, du jeu jalon-1.html, du tag jalon-1, du tableau de bord et des tests réalisés. Les anciens liens de remise vers rendu/ sont retirés du document.
+- **Contrôles :** document rendu sur une page et inspecté visuellement ; cinq destinations de liens vérifiées lors de sa recréation, puis nom contrôlé après ajout du prénom. Présence et identité du fichier publié vérifiées lors de la restitution.
+- **Tag :** jalon-1 reste attaché à sa version précédente ; aucun déplacement du tag pour cet ajout documentaire.

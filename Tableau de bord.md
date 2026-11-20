@@ -178,4 +178,14 @@ Ce document est un suivi manuel : il ne se met pas à jour automatiquement.
 - **AGENTS.md :** obligation explicite de consigner chaque futur test demandé dans Test.md et de tenir la copie GitHub à jour, sauf instruction contraire ; distinguer un test réalisé d’un test non réalisé.
 - **Tableau de bord.md :** ajout de cette entrée.
 - **Contrôles :** cohérence des résultats avec le README et les sorties du test déjà exécuté ; vérification des fichiers enregistrés sur GitHub lors de la restitution. Aucun nouveau test du jeu lancé pour cette mise à jour documentaire.
-- **Commit :** voir [l’historique de Test.md](https://github.com/Raphromage/Mastermind/commits/main/Test.md).
+- **Commit :** voir [l’historique de Test.md](https://github.com/Raphromage/Mastermind/commits/main/Tests%20r%C3%A9alis%C3%A9s.md).
+
+## 20 novembre 2026 — Renommage du journal des tests
+
+- **Date de la demande :** 20/11/2026 ; heure exacte non disponible.
+- **Nature :** renommage de fichier.
+- **Demande :** renommer le fichier test en « Tests réalisés ».
+- **Changements :** `Test.md` devient `Tests réalisés.md`, sans modification de son contenu ; les références actives dans AGENTS.md et les liens d’historique du journal sont adaptés. Les anciennes entrées du tableau gardent les noms de fichiers utilisés au moment des changements.
+- **Consigne conservée :** chaque futur test demandé doit être consigné dans `Tests réalisés.md`.
+- **Contrôle :** vérification du nouveau chemin, de la disparition de l’ancien chemin et de la conservation du contenu lors de la restitution.
+- **Commit :** voir [l’historique du journal](https://github.com/Raphromage/Mastermind/commits/main/Tests%20r%C3%A9alis%C3%A9s.md).

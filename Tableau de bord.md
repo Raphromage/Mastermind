@@ -208,3 +208,14 @@ Ce document est un suivi manuel : il ne se met pas à jour automatiquement.
 - **Périmètre :** aucune modification du dossier rendu.
 - **Contrôle :** comparaison du blob du jeu avant/après renommage et vérification de l’accès GitHub Pages après déploiement. La création du tag distant est vérifiée séparément.
 - **Tag demandé :** jalon-1 pour le commit de cette version à la racine ; un tag local seul ne prouve pas sa publication sur GitHub.
+
+## 20 novembre 2026 — Publication vérifiée du tag jalon-1
+
+- **Date de la demande :** 20/11/2026 ; heure exacte non disponible.
+- **Nature :** publication d’un tag Git.
+- **Demande :** « publie le tag jalon-1 » pour la version du jeu à la racine.
+- **Résultat :** après validation de la connexion GitHub, l’envoi Git a réussi et la présence du tag distant a été vérifiée.
+- **Cible :** [b9c847973197d4c10ad5d805760d2b6a2639661f](https://github.com/Raphromage/Mastermind/commit/b9c847973197d4c10ad5d805760d2b6a2639661f), version contenant le jeu de la racine dans jalon-1.html et la redirection index.html.
+- **Lien :** [version jalon-1](https://github.com/Raphromage/Mastermind/tree/jalon-1).
+- **Fichiers du jeu :** aucun changement lors de la publication du tag. Seul ce tableau est complété après la vérification ; le tag reste attaché au commit cité.
+- **Historique :** les mentions antérieures de blocage décrivent la situation avant la connexion ; le tag est désormais publié. Le dossier rendu reste inchangé.

@@ -168,3 +168,14 @@ Ce document est un suivi manuel : il ne se met pas à jour automatiquement.
 - **Tableau de bord.md :** ajout de cette entrée de suivi.
 - **Contrôle :** relecture des résultats conservés dans la conversation ; vérification du contenu enregistré sur GitHub lors de la restitution. Aucun nouveau test du jeu nécessaire pour cet ajout documentaire.
 - **Commit :** voir [l’historique du README](https://github.com/Raphromage/Mastermind/commits/main/README.md).
+
+## 20 novembre 2026 — Journalisation systématique des tests demandés
+
+- **Date de la demande :** 20/11/2026 ; heure exacte non disponible.
+- **Nature :** documentation des résultats et consigne de travail durable.
+- **Demande :** ajouter le test rouge–rouge–bleu–vert à Test.md et y consigner à l’avenir tous les tests demandés.
+- **Test.md :** ajout des résultats automatisés déjà obtenus le 20 novembre, avec secret imposé, attentes, observations, statuts et version du fichier testé.
+- **AGENTS.md :** obligation explicite de consigner chaque futur test demandé dans Test.md et de tenir la copie GitHub à jour, sauf instruction contraire ; distinguer un test réalisé d’un test non réalisé.
+- **Tableau de bord.md :** ajout de cette entrée.
+- **Contrôles :** cohérence des résultats avec le README et les sorties du test déjà exécuté ; vérification des fichiers enregistrés sur GitHub lors de la restitution. Aucun nouveau test du jeu lancé pour cette mise à jour documentaire.
+- **Commit :** voir [l’historique de Test.md](https://github.com/Raphromage/Mastermind/commits/main/Test.md).

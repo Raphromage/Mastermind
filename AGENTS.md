@@ -42,7 +42,7 @@
 - Pour un changement du moteur, exécuter `node check-rules.cjs` depuis le dossier du projet si le script et Node.js sont disponibles. Vérifier que le script teste bien la version modifiée.
 - Couvrir les deux exemples d’indices du README, les couleurs répétées, les propositions invalides, la victoire au dixième essai, la défaite après dix essais et le blocage après la fin.
 - Pour un changement de l’interface, vérifier dans le navigateur la sélection des quatre couleurs, la validation, les messages, le compteur, l’historique et « Nouvelle partie ». Vérifier l’affichage sur petit écran si la mise en page change.
-- Ajouter chaque session ou partie de test dans `Test.md` : date, version testée, environnement, actions, résultats attendus et observés, statut et limites. Ne pas présenter un test automatisé comme une partie jouée dans le navigateur.
+- Consigner systématiquement dans `Test.md` chaque test demandé par l’utilisateur, sans attendre une demande supplémentaire de documentation. Indiquer la date, la demande, le type (manuel ou automatisé), la version testée si connue, l’environnement, les actions, les résultats attendus et observés, le statut et les limites. Maintenir le journal du dépôt GitHub à jour dans le cadre de ces demandes, sauf instruction explicite contraire (par exemple : ne modifier aucun fichier). Si un test ne peut pas être exécuté, le noter comme non réalisé avec la raison ; ne jamais inventer de résultat. Conserver les tests précédents et éviter les doublons. Ne pas présenter un test automatisé comme une partie jouée dans le navigateur.
 - Après une publication autorisée, vérifier le déploiement GitHub Pages et la page servie avant d’annoncer la mise en ligne.
 
 ## Limites

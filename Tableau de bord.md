@@ -219,3 +219,12 @@ Ce document est un suivi manuel : il ne se met pas à jour automatiquement.
 - **Lien :** [version jalon-1](https://github.com/Raphromage/Mastermind/tree/jalon-1).
 - **Fichiers du jeu :** aucun changement lors de la publication du tag. Seul ce tableau est complété après la vérification ; le tag reste attaché au commit cité.
 - **Historique :** les mentions antérieures de blocage décrivent la situation avant la connexion ; le tag est désormais publié. Le dossier rendu reste inchangé.
+
+## 20 novembre 2026 — Suppression du dossier rendu
+
+- **Date de la demande :** 20/11/2026 ; heure exacte non disponible.
+- **Nature :** suppression d’un dossier du dépôt.
+- **Demande :** « supprime le dossier rendu ».
+- **Changements :** suppression des 11 fichiers de rendu/ sur la branche main ; ajout de cette entrée au tableau de bord.
+- **Périmètre :** le jeu jalon-1.html et les autres fichiers de la racine sont conservés. Le tag jalon-1 conserve sa cible historique ; cette suppression ne réécrit pas les anciens commits.
+- **Contrôle :** vérification de l’absence de rendu/ dans le nouvel arbre Git lors de la restitution.
